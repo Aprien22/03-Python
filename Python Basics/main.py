@@ -1,9 +1,11 @@
 print("Hello, World!\n")
 
-name = input("What is your name? ")
-birth_year = input("When were you born? ")
+sum = 0;
 
-age = 2024 - int(birth_year)
+first = input("First Number: ")
+second = input("Second Number: ")
 
+sum = float(first) + float(second)
 
-print(f"Hello, {name}!\nYou were born in {birth_year}.\nThat mean you're {age} years old\n")
+print(f"The sum of your numbers {first} and {second} is {sum}")
+
