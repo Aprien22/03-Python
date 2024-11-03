@@ -1,11 +1,12 @@
-print("Hello, World!\n")
+# Variables
 
-sum = 0;
+name = "John" #S tring
+age = 20 # Integer
+gpa = 1.5 # Float
+isStudent = True # Boolean
 
-first = input("First Number: ")
-second = input("Second Number: ")
-
-sum = float(first) + float(second)
-
-print(f"The sum of your numbers {first} and {second} is {sum}")
+# Input and Output
+name = input("What is your name? ") # Input
+print("Your name is" + name) # Output
+print(f"Your name is {name}") # Output
 
