@@ -17,11 +17,11 @@ colors = {
     "red": "warm"
 }
 
-
 while True:
     # Ask for age and favorite color
     age = input("How old are you? ")
     color = input("What's your favorite color? ")
+    day = (input("What is the day today? [M/T/W/F/TH/F] - ")).lower()
 
     # Validate age input
     while not age.isdigit():
@@ -36,6 +36,15 @@ while True:
             break
 
     print(f"Nice to meet you, {name}! You're {int(age)}, meaning you're {category}.")
+
+
+    # Output day-related message
+    match day:
+        case 'm': print("Monday")
+        case 't': print("Tuesday")
+        case 'w': print("Wednesday")
+        case 'th': print("Thursday")
+        case 'f': print("Friday")
 
     # Output color-related message
     if color.lower() in colors:
