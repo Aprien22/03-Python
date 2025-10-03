@@ -1,3 +1,5 @@
+print("Basic Calculator")
+
 def add(a: int, b: int) -> int:
     return a + b
 
@@ -24,10 +26,10 @@ product = multiply(x, y)
 quotient = divide(x, y)
 power = pow(x, y)
 
-print(f"The sum of {x} and {y} is {sum}")
-print(f"The difference of {x} and {y} is {difference}")
-print(f"The product of {x} and {y} is {product}")
-print(f"The quotient of {x} and {y} is {quotient}")
-print(f"{x} raised to the power of {y} is {power:,}")
+print(f"SUM: {x} + {y} = {sum}")
+print(f"DIFFERENCE: {x} - {y} = {difference}")
+print(f"PRODUCT: {x} * {y} = {product}")
+print(f"QUOTIENT: {x} / {y} = {quotient:.2f}")
+print(f"POWER: {x} ** {y} = {power:,}")
 
 
