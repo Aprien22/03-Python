@@ -25,7 +25,7 @@ greet_two_person("Alice", "Bob")
 
 
 print("=" * 40)
-def create_email(recepient: str, subject: str, body: str) -> str:
+def create_email(recepient: str, subject: str = "No Subject", body: str = "") -> str:
 
     """Create a formatted email string.
     
@@ -39,7 +39,9 @@ def create_email(recepient: str, subject: str, body: str) -> str:
     return email
 
 email_content = create_email("john.doe@example.com", "Hello!", "This is a test email.")
+email_content2 = create_email("jane.doe@example.com")
 print(email_content)
+print(email_content2)
 
 print("=" * 40)
 
